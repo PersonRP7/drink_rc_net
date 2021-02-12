@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="card-group">
+    <div class="card">
+    <div class="view overlay">
+      <img class="card-img-top" src="{% static 'about/gaggia1.png' %}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Gaggia Aparati</h5>
+        <p class="card-text">Vrhunski Gaggia aparati za kavu.</p>
+      </div>
+      <div class="card-footer">
+        <a href="#" class="btn btn-outline-info"><div class="mask rgba-white-slight"></div>Read</a>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <div class="card">
+        <div class="view overlay">
+          <img class="card-img-top" src="{% static 'about/vending_machine.jpg' %}" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title">Strojevi na kovanice</h5>
+            <p class="card-text">Široki izbor strojeva na kovanice.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn btn-outline-info"><div class="mask rgba-white-slight"></div>Read</a>
+            </div>
+          </div>
+        </div>
+        <!-- Card -->
+        <div class="card">
+            <div class="view overlay">
+              <img class="card-img-top" src="{% static 'about/capsule_machine2.jpg' %}" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title">Strojevi na kapsule</h5>
+                <p class="card-text">Pellini E-Smart strojevi na kapsule.</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-outline-info"><div class="mask rgba-white-slight"></div>Read</a>
+                </div>
+              </div>
+        </div>
+        <!-- /Card -->
+  </div>
+  <br>
+  <!-- <p>Other content</p> -->
+
+{% endblock content %}

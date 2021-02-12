@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="row">
+    <div class="col-sm-6 d-flex justify-content-center">
+      <form action="{% url 'products:search_data' '{{ request.GET.search }}' %}" enctype="application/x-www-form-urlencoded" autocomplete="off">
+          <input type="text" name="search" id="search">
+          <button class="btn btn-outline-green" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+{% endblock content %}

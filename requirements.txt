@@ -1,0 +1,7 @@
+django
+braintree
+python-dotenv
+django-crispy-forms
+django-verified-email-field
+Pillow
+pyyaml

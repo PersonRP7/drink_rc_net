@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="row">
+  {% for product in products %}
+      <div class="col-md-4">
+          <div class="card mb-2">
+              <img class="card-img-top" src="{{ product.cover.url }}">
+              <div class="card-body">
+                  <h5 class="card-title">{{ product.title }}</h5>
+                  <p class="card-text">{{ product.short_description }}</p>
+                  <a href="#"
+                     class="btn btn-outline-info">
+                      Add to Cart
+                  </a>
+              </div>
+          </div>
+      </div>
+      {% endfor %}
+  </div>
+{% endblock content %}

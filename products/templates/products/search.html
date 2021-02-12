@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="row">
+    <div class="col-sm-6 d-flex justify-content-center">
+      <form method = 'POST'>
+            {% csrf_token %}
+            {{ form }}
+          <button class="btn btn-outline-green" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+{% endblock content %}

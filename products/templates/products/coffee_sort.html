@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="row">
+
+        <div class="card-group">
+
+            {% for product in products %}
+            <div class="col-md-4">
+                <div class="card mb-5">
+                    <div class="view overlay embed-responsive embed-responsive-1by1 img-fluid">
+                        <img src="{{ product.cover.url }}" alt="" class="card-img-top embed-responsive-item">
+                        <a href="#">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                    
+                        <div class="card-body text-center">
+                           
+                            <h4 class="card-title red-text">{{ product.title }}</h4>
+                           
+    
+                         
+                            {% comment %} <p class="card-text">{{ product.short_description }}</p> {% endcomment %}
+                           
+    
+                              <!-- <a href="#" class="btn btn-outline-info btn-sm mr-1 mb-2"><i class="fas fa-shopping-cart pr-2"></i>Add to cart</a> -->
+                              <button class="snipcart-add-item btn btn-light btn-sm mr-1 mb-2"
+                              data-item-id="{{ product.id }}"
+                              data-item-price="{{ product.price }}"
+                              data-item-url="{{ product.get_absolute_url }}"
+                              data-item-description="{{ product.description }}"
+                              data-item-name="{{ product.title }}"
+                              >
+                              <i class="fas fa-shopping-cart pr-2"></i>Add to cart
+                              </button>
+                            
+                              <a href="{{ product.get_absolute_url }}" class="btn btn-light btn-sm mr-1 mb-2"><i class="fas fa-info-circle pr-2"></i>Details</a>
+
+                              <span><p>Price: {{ product.price }} kn</span>
+
+                        </div>
+                    
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+
+    </div>
+
+    <div hidden id="snipcart" data-api-key="{{ DATA_API_KEY }}"></div>
+{% endblock content %}

@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+ <!-- <div class="row"> -->
+
+        <div class="card-group">
+
+            {% for o in object %}
+            <div class="col-md-4">
+                <div class="card mb-5">
+                    <div class="view overlay embed-responsive embed-responsive-1by1 img-fluid">
+                        <img src="{{ o.cover.url }}" alt="" class="card-img-top embed-responsive-item">
+                        <a href="#">
+                            <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+
+                        <div class="card-body text-center">
+
+                            <h4 class="card-title red-text">{{ o.title }}</h4>
+
+                            <div>
+                            {% if o.heading_1 %}
+                                <div class="card-text">{{ o.heading_1 }}</div>
+                            {% endif %}
+
+                            {% if o.heading_2 %}
+                            <div class="card-text">{{ o.heading_2 }}</div>
+                            {% endif %}
+
+                            {% if o.heading_3 %}
+                            <div class="card-text">{{ o.heading_3 }}</div>
+                            {% endif %}
+
+                            {% if o.heading_4 %}
+                            <div class="card-text">{{ o.heading_4 }}</div>
+                            {% endif %}
+
+                            {% if o.heading_5 %}
+                            <div class="card-text">{{ o.heading_5 }}</div>
+                            {% endif %}
+
+                            {% if o.heading_6 %}
+                            <div class="card-text">{{ o.heading_6 }}</div>
+                            {% endif %}
+
+                            {% if o.heading_7 %}
+                            <div class="card-text">{{ o.heading_7 }}</div>
+                            {% endif %}
+                            </div>
+
+
+
+                            <h3 class="card-text card-body border">{{ o.long_description }}</h3>
+
+                            {% if o.slug == 'gaggia-classic-pro' %}
+                                <div class="card-text">
+                                Na gotovinsko ili virmansko plaćanje odobravamo popust od 5% =  2.992,50 kn (PDV uračunat)
+
+Besplatno preuzimanje  ili šaljemo poštom na Vaš trošak      Pošalji upit!
+
+Uz to nudimo već mljevenu kavu Pellini kao i pribor za kuhanje mlijeka ( <a href="https://www.njuskalo.hr/aparati-za-kavu/pither-mlijeko-razni-oglas-32637302">Pitcher za mlijeko</a> ), tampere ( <a href="https://www.njuskalo.hr/aparati-za-kavu/tamper-drvo-essential-58mm-oglas-32871430">Potiskivač za kavu</a> ), knock-box mini ( <a href="http://www.prometaroma.hr/default.aspx?id=299">Posuda za soc</a> ), sredstvo za čišćenje kamenca ( <a href="https://www.njuskalo.hr/servis-kucanskih-aparata/sredstvo-ciscenje-kamenca-oglas-29346287">Dekalcifikacija</a> ), sve tehničke informacije, mogućnost servisiranja uz ugradnju originalnih Gaggia dijelova.
+                                </div>
+                            {% elif o.slug == 'gaggia-magenta-plus' %}
+                                <div class="card-text">
+                                    Na gotovinsko ili virmansko plaćanje odobravamo popust od 5% = 3.325,00 kn (PDV uračunat)
+
+Besplatno preuzimanje  ili šaljemo poštom na Vaš trošak      Pošalji upit!
+
+Uz to nudimo već mljevenu kavu Pellini kao i pribor za kuhanje mlijeka ( <a href="https://www.njuskalo.hr/aparati-za-kavu/pither-mlijeko-razni-oglas-32637302">Pitcher za mlijeko</a> ), sredstvo za čišćenje kamenca ( <a href="https://www.njuskalo.hr/servis-kucanskih-aparata/sredstvo-ciscenje-kamenca-oglas-29346287">Dekalcifikacija</a> ), sve tehničke informacije, mogućnost servisiranja uz ugradnju originalnih Gaggia dijelova.
+                                </div>
+                            {% endif %}
+
+
+                              <button class="snipcart-add-item btn btn-light btn-sm mr-1 mb-2"
+                              data-item-id="{{ o.id }}"
+                              data-item-price="{{ o.price }}"
+                              data-item-url="https://{{ request.get_host }}{{ o.get_absolute_url }}"
+                              data-item-description="{{ o.short_description }}"
+                              data-item-name="{{ o.title }}"
+                              >
+                              <i class="fas fa-shopping-cart pr-2"></i>Add to cart
+                              </button>
+
+
+                              <span><p>Price: {{ o.price }} kn</span>
+
+                        </div>
+
+                </div>
+            </div>
+            {% endfor %}
+
+        </div>
+
+     </div>
+
+    <div style="visibility:hidden" hidden id="snipcart" data-api-key="{{ DATA_API_KEY }}"></div>
+{% endblock content %}

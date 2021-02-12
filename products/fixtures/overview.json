@@ -1,0 +1,39 @@
+[
+    {
+        "model": "products.coffeeoverview",
+        "pk": 1,
+        "fields": {
+            "title": "Kava u zrnu",
+            "code": "bean",
+            "cover": "images/pellini_top.jpg"
+        }
+    },
+    {
+        "model": "products.coffeeoverview",
+        "pk": 2,
+        "fields": {
+            "title": "Mljevena kava",
+            "code": "ground",
+            "cover": "images/pellini_cremoso.jpg"
+        }
+    },
+    {
+        "model": "products.coffeeoverview",
+        "pk": 3,
+        "fields": {
+            "title": "Kava u nespresso kapsulama",
+            "code": "capsule",
+            "cover": "images/pellini_nespresso_magnifico.jpg"
+        }
+    },
+    {
+        "model": "products.machineoverview",
+        "pk": 4,
+        "fields": {
+            "title": "Snack strojevi",
+            "code": "snack",
+            "cover": "images/snack_machine.jpg"
+        }
+    }
+
+]

@@ -1,0 +1,422 @@
+[
+    {
+        "model": "products.vendingmachine",
+        "pk": 1,
+        "fields": {
+            "title": "Automati na kovanice",
+            "short_description": "Automati za tople napitke s naplatnim sustavom.",
+            "long_description": "Besplatno postavljanje aparata i besplatno održavanje istih, naručite uslugu već danas i uživajte u vrhunskoj kavi po super cijenama od 2-4 kune po napitku! Na automatu je moguće odbrati slijedeće tople napitke: Espresso kava u zrnu Pellini VIVACE  ili instant kava, kava s mlijekom, cappuccino, cappuccino s čokoladom, topla čokolada, topli čaj, mlijeko i ostale tople napitke. Napitci se spravljaju od renomiranih sirovina svjetskih poizvođača; Pellini VIVACE kava u zrnu, Ristora mlijeko u prahu, Ristora čokolada i Columbo instant kava. Deklaracije i normativi napitaka istaknuti su na svakom našem automatu. U ponudi imamo razne tipove aparata s raznim naplatnim sustavima (kovanice, novčanice, na obračun), sve po dogovoru jer svaka lokacija ima svoje posebnosti. Usluga je dostupna u Zagrebačkoj županiji.",
+            "heading_1": "Automati za tople napitke s naplatnim sustavom",
+            "heading_2": "Za radne sredine s 10 i više zaposlenih",
+            "heading_3": "8-15 različitih toplih napitaka po cijeni od 2-4 kune",
+            "price": null,
+            "cover": "images/vending_machine.jpg"
+        }
+    },
+    {
+        "model": "products.capsulemachine",
+        "pk": 2,
+        "fields": {
+            "title": "Pellini eSmart",
+            "short_description": "Aparat na kapsule.",
+            "long_description": "Pellini eSmart stvoren ja za istinske ljubitelje espressa. Idealan je za radne sredine do 10 zaposlenih. Aparat je iznimno jednostavan za uporabu. Mljevena kava pakirana je u plastične kapsule i sadrži optimalnu gramažu i granulaciju za nepogrešiv espresso pri svakom spravljanju. Aparat na korištenje bez naknade za sve koji troše bar od 4 kave dnevno (100 kava mjesečno). Pribor od 100 komada čaša, žličica i šećera kupuje se po izboru za 20 kn. Moguće slanje kave i aparata poštom na trošak korisnika. Besplatna dostava u Zagrebu.",
+            "heading_1": "Vrhunski espresso za 30 sekundi!",
+            "heading_2": "Cijena kave je od 2,99 do 3,10 kn/komad",
+            "heading_3": "Aparat na korištenje nudimo besplatno za potrošnju veću od 4 kave dnevno!",
+            "heading_4": "Pellini TOP Arabica 100% (vrhunski espresso) 3,10 kn / 1 kava s PDV-om",
+            "heading_5": "Pellini BREAK (Mješavina sorti, intenzivna aroma) 2,99 kn / 1 kava s PDV-om",
+            "heading_6": "Paket sadrži 100 komada kava.",
+            "price": null,
+            "cover": "images/capsule_machine2.jpg"
+        }
+    },
+    {
+        "model": "products.snackmachine",
+        "pk": 3,
+        "fields": {
+            "title": "Snack aparati",
+            "short_description": "Široki asortiman snack aparata.",
+            "long_description": "Besplatno postavljanje aparata i besplatno punjenje i održavanje. Slane grickalice, 7 Days kroasani, čokoladice, voda Jana, Coca-Cola i prirodni sokovi po prihvatljivim cijenama! Kupovinu artikala olakšava sustav naplate koji prihvaća papirnati novac te uzvraća preplaćeni iznos. Aparat nudi oko 20 različitih rashlađenih proizvoda. Asortiman proizvoda u automatu moguće je prilagoditi po željama korisnika. Naručite svoj snack aparat još danas!",
+            "heading_1": "Voda i bezalkoholna pića",
+            "heading_2": "Slane grickalice i čokoladice",
+            "heading_3": "Moguće plaćanje novčanicama",
+            "price": null,
+            "cover": "images/snack_machine.jpg"
+        }
+    },
+    {
+        "model": "products.waterdispenser",
+        "pk": 4,
+        "fields": {
+            "title": "Dispenzeri za vodu",
+            "short_description": "Hrvatska izvorska voda, hladna ili vruća, na dohvat ruke.",
+            "long_description": "Voda Sveti Rok puni se na prirodnom izvorištu Kozjan na južnoj strani Velebita u području nacionalnog parka Velebit. Crpi se na dubini od 90m i na temperaturi od 9oC. Izvorska voda Sveti rok ima iznimno nizak isparinski ostatak (150,2 mg/l) i prirodno je obogaćena magnezijem. Naručite svoj aparat za vodu već danas, za veće potrošaće nudimno posebne pogodnosti! Minimalna potrošnja iznosi 2 boce mjesečno.",
+            "heading_1": "Voda Sveti Rok (18,9l) s čašama: 55,00 kn s PDV-om",
+            "heading_2": "Kaucija po boci: 50,00 kn s PDV-om",
+            "heading_3": "Mjesečni najam aparata: 40,00 kn s PDV-om ",
+            "heading_4": "Minimalna potrošnja iznosi 2 boce mjesečno",
+            "heading_5": "Besplatna dostava u Zagrebu",
+            "price": null,
+            "cover": "images/water_dispenser.png"
+        }
+    },
+    {
+        "model": "products.coffeemachine",
+        "pk": 5,
+        "fields": {
+            "title": "GAGGIA CLASSIC PRO",
+            "short_description": "Gaggia Classic PRO stroj za kavu.",
+            "long_description": "Gaggia Classic PRO - potpuno novi model iz 2019. godine. Najpopularniji kućanski espresso aparat na svijetu. Prvi model proizveden je prije više od 30 godina i značajna količina ih radi i dan danas. Novim modelom ispravljene su sve prethodne greške i povećan je užitak priprave vašeg omiljenog jutarnjeg napitka. Aparat se isporučuje s plastičnim tamperom i žlicom za prebacivanje te ima 3 filter sita za sve tipove kave. Uz profesionalan Gaggia portafilter (ručku) dobivate i profesionalnu cijev pare koja radi predivnu micro-kremu za macchiato, cappuccino, latte ili latte art. Probudi baristu u sebi, odaberi najbolje!",
+            "heading_1": "Gaggia Classic PRO konačno stigla u Hrvatsku!",
+            "heading_2": "Proizveden u Italiji, godina modela 2019.",
+            "heading_3": "Šifra modela RI9480/11",
+            "price": 3150.00,
+            "cover": "images/gaggia1.png"
+        }
+    },
+    {
+        "model": "products.coffeemachine",
+        "pk": 6,
+        "fields": {
+            "title": "GAGGIA MAGENTA PLUS",
+            "short_description": "Gaggia Magenta PLUS stroj za kavu.",
+            "long_description": "Superautomat za kavu s profesionalnom cijevi pare. Laganim dodirom TFT ekrana u boji ovaj Gaggin najnoviji model aparata kuha savršeni espresso ili lungo caffe za svega nekoliko sekundi. Uz malo vještine svatko moze dobiti mikro-kremu na kuhanom mlijeku uz pomoć PRO inox cijevi pare koja je standardni dio ovog modela. Budite uvijek spremni za espresso, macchiato, cappuccino ili latte. Probudi baristu u sebi, odaberi najbolje!",
+            "heading_1": "Jednostavan za korištenje, idealan za kućanstvo i tvrtke",
+            "heading_2": "Aparat za kavu s mlincem i displejom u boji",
+            "heading_3": "Profesionalna cijev za paru",
+            "price": 3500.00,
+            "cover": "images/gaggia_magenta_plus.jpg"
+        }
+    },
+    {
+        "model": "products.coffeebeans",
+        "pk": 7,
+        "fields": {
+            "title": "PELLINI TOP 1KG",
+            "short_description": "Kava za kućanske espresso aparate.",
+            "long_description": "Kava za kućanske espresso aparate.",
+            "heading_1": "Delikatno pržena kava u zrnu",
+            "heading_2": "100% Arabica sorte Etiopije, Kolumbije, Gvatemale i Brazila.",
+            "heading_3": "Top selekcija zrna, delikatno pržena",
+            "heading_4": "Harmoničan okus, umjerena kiselost",
+            "heading_5": "Nizak postotak kofeina, 1.3%",
+            "heading_6": "Savršen espresso i bez dodatka šećera",
+            "price": 229.00,
+            "cover": "images/pellini_top.jpg"
+        }
+    },
+    {
+        "model": "products.coffeebeans",
+        "pk": 8,
+        "fields": {
+            "title": "PELLINI ORO CLASSIC 1KG",
+            "short_description": "Pellini Oro CLASSIC kava u zrnu.",
+            "long_description": "Za ugostitelje nudimo posebne pogodnosti.",
+            "heading_1": "Pržena kava u zrnu",
+            "heading_2": "90% Arabica",
+            "heading_3": "Harmoničan okus, puno tijelo",
+            "heading_4": "Dugotrajan aftertaste",
+            "heading_5": "Nizak postotak kofeina",
+            "heading_7": "Tipičan talijanski espresso",
+            "price": 209.90,
+            "cover": "images/pellini_oro_classic.jpg"
+        }
+    },
+    {
+        "model": "products.coffeebeans",
+        "pk": 9,
+        "fields": {
+            "title": "PELLINI ORO INTENSO 1KG",
+            "short_description": "Pellini Oro INTENSO kava u zrnu.",
+            "long_description": "Za ugostitelje nudimo posebne pogodnosti.",
+            "heading_1": "Pržena kava u zrnu",
+            "heading_2": "70% Arabica",
+            "heading_3": "Intenzivna aroma, puno tijelo",
+            "heading_4": "Čokoladni okus, postojana krema",
+            "heading_5": "Idealna za napitke s mlijekom",
+            "heading_6": "Najprodavanija kava u barovima",
+            "price": 189.00,
+            "cover": "images/pellini_oro_intenso.jpg"
+        }
+    },
+    {
+        "model": "products.coffeebeans",
+        "pk": 10,
+        "fields": {
+            "title": "PELLINI VIVACE 1KG",
+            "short_description": "Pellini VIVACE kava u zrnu.",
+            "long_description": "Kava za kućanske espresso aparate.",
+            "heading_1": "Pržena kava u zrnu",
+            "heading_2": "60% Arabica",
+            "heading_3": "Harmonična, bez kiselosti",
+            "heading_4": "Snažan okus bez gorčine",
+            "heading_5": "Za espresso i za miješane napitke",
+            "heading_6": "Stvorena za vending i kućanstvo",
+            "price": 143.00,
+            "cover": "images/pellini_vivace.jpg"
+        }
+    },
+    {
+        "model": "products.coffeebeans",
+        "pk": 11,
+        "fields": {
+            "title": "PELLINI VERDE 1KG",
+            "short_description": "Pellini VERDE kava u zrnu.",
+            "long_description": "Kava za kućanske espresso aparate.",
+            "heading_1": "Pržena kava u zrnu",
+            "heading_2": "Mješavina sorti",
+            "heading_3": "Snažan okus čokolade",
+            "heading_4": "Idealna za napitke s mlijekom",
+            "heading_5": "Odličan izbor za kućanske aparate",
+            "price": 120.00,
+            "cover": "images/pellini_verde.jpg"
+        }
+    },
+    {
+        "model": "products.coffeebeans",
+        "pk": 12,
+        "fields": {
+            "title": "PELLINI ROSSO 1KG",
+            "short_description": "Pellini ROSSO kava u zrnu",
+            "long_description": "Kava za kućanske espresso aparate",
+            "heading_1": "Pržena kava u zrnu",
+            "heading_2": "100% Robusta",
+            "heading_3": "Snažan okus, bogata krema",
+            "heading_4": "Idealna za napitke s mlijekom",
+            "heading_5": "Visok udio kofeina",
+            "heading_6": "Samo za vending i kućanstvo",
+            "price": 99.00,
+            "cover": "images/pellini_rosso.jpg"
+        }
+    },
+    {
+        "model": "products.groundcoffee",
+        "pk": 13,
+        "fields": {
+            "title": "PELLINI VELLUTATO 2X250G",
+            "short_description": "Pellini VELLUTATO mljevena kava",
+            "long_description": "Kava za kućanske espresso aparate",
+            "heading_1": "Pržena mljevena kava",
+            "heading_2": "Mješavina uglavnom arabica sorti",
+            "heading_3": "Snažna aroma, harmoničan okus",
+            "heading_4": "Nizak postotak kofeina, 1.3%",
+            "heading_5": "Pogodna za sve espresso aparate",
+            "price": 82.50,
+            "cover":"images/pellini_vellutato.jpg"
+        }
+    },
+    {
+        "model": "products.groundcoffee",
+        "pk": 14,
+        "fields": {
+            "title": "PELLINI CREMOSO 250G",
+            "short_description": "Pellini CREMOSO mljevena kava.",
+            "long_description": "Kava za kućanske espresso aparate",
+            "heading_1": "Mljevena kava za espresso aparate",
+            "heading_2": "Mješavina sorti arabice i robuste",
+            "heading_3": "Intenzivna aroma",
+            "heading_4": "Postojana krema",
+            "heading_5": "Idealna baza za napitke s mlijekom",
+            "price": 39.50,
+            "cover": "images/pellini_cremoso.jpg"
+        }
+    },
+    {
+        "model": "products.groundcoffee",
+        "pk": 15,
+        "fields": {
+            "title": "PELLINI TRADIZIONALE 250G",
+            "short_description": "Pellini TRADIZIONALE mljevena kava.",
+            "long_description": "Kava za kućanske espresso aparate",
+            "heading_1": "Pržena mljevena kava",
+            "heading_2": "Mješavina sorti arabice i robuste",
+            "heading_3": "Intenzivna aroma",
+            "heading_4": "Idealna baza za napitke s mlijekom",
+            "heading_5": "Pogodna za moku i filter aparate",
+            "price": 39.50,
+            "cover": "images/pellini_tradizionale.jpg"
+        }
+    },
+    {
+        "model": "products.groundcoffee",
+        "pk": 16,
+        "fields": {
+            "title": "PELLINI BIO 250G",
+            "short_description": "Pellini BIO mljevena kava.",
+            "long_description": "Kava za kućanske espresso aparate",
+            "heading_1": "Pržena mljevena kava u limenci",
+            "heading_2": "Kava iz organskog uzgoja",
+            "heading_3": "100% Arabica sorta iz Etiopije, Kolumbije, Gvatemale i Brazila",
+            "heading_4": "Harmoničan okus, umjerena kiselost",
+            "heading_5": "Nizak postotak kofeina, 1.3%",
+            "heading_6": "Savršena kava i bez dodatka šećera",
+            "heading_7": "Pogodna za moku i filter aparate",
+            "price": 69.00,
+            "cover": "images/pellini_bio.png"
+        }
+    },
+    {
+        "model": "products.groundcoffee",
+        "pk": 17,
+        "fields": {
+            "title": "PELLINI TOP 250G",
+            "short_description": "Pellini TOP mljevena kava",
+            "long_description": "Kava za kućanske espresso aparate",
+            "heading_1": "Pržena mljevena kava u limenci",
+            "heading_2": "100% Arabica sorte iz Etiopije, Kolumbije, Gvatemale i Brazila",
+            "heading_3": "Harmoničan okus, umjerena kiselost",
+            "heading_4": "Nizak postotak kofeina, 1.3%",
+            "heading_5": "Savršena kava i bez dodatka šećera",
+            "heading_6": "Pogodna za moku i filter aparate",
+            "price": 61.00,
+            "cover": "images/pellini_top_ground.jpg"
+        }
+    },
+    {
+        "model": "products.groundcoffee",
+        "pk": 18,
+        "fields": {
+            "title": "PELLINI TOP CIALDE/PODS",
+            "short_description": "Pellini TOP cialde/pods",
+            "long_description": "Kava za kućanske espresso aparate",
+            "heading_1": "Mljevena kava u filtar vrećici, 7g x 18kom",
+            "heading_2": "Za Cialde/Pods aparate, 44mm",
+            "heading_3": "100% Arabica, top selekcija",
+            "heading_4": "Harmoničan okus umjerene kiselosti",
+            "heading_5": "Nizak postotak kofeina, 1.3%",
+            "price": 45.00,
+            "cover": "images/pellini_top_cialde.jpg"
+        }
+    },
+    {
+        "model": "products.groundcoffee",
+        "pk": 19,
+        "fields": {
+            "title": "PELLINI UIK BEZ KOFEINA",
+            "short_description": "Pellini UIK bez kofeina.",
+            "long_description": "Besplatna dostava u Zagrebu (min. 200kn)",
+            "heading_1": "Pržena mljevena kava u paketićima",
+            "heading_2": "90% Arabica",
+            "heading_3": "Prirodno dekofeinizirana",
+            "heading_4": "Harmoničan okus",
+            "heading_5": "7 grama kave u paketiću",
+            "price": 130.00,
+            "cover": "images/pellini_uik.png"
+        }
+    },
+    {
+        "model": "products.capsulecoffee",
+        "pk": 20,
+        "fields": {
+            "title": "PELLINI TOP 10KOM",
+            "short_description": "Pellini TOP kapsule za Nespresso.",
+            "long_description": "Kava za kućanske espresso aparate",
+            "heading_1": "Za Nespresso aparate",
+            "heading_2": "Pržena mljevena kava u kapsuli",
+            "heading_3": "100% Arabica sorta iz Etiopije, Kolumbije, Gvatemale i Brazila",
+            "heading_4": "Ruža, cvijet limuna, med, čokolada, vanilija",
+            "heading_5": "Nizak postotak kofeina, 1.3%",
+            "heading_6": "Savršen espresso i bez dodatka šećera",
+            "price": 32.00,
+            "cover": "images/pellini_top_nespresso.jpg"
+        }
+    },
+    {
+        "model": "products.capsulecoffee",
+        "pk": 21,
+        "fields": {
+            "title": "PELLINI DECAFEINATO",
+            "short_description": "Pellini DECAFEINATO kapsule za nespresso.",
+            "long_description": "Kava za kućanske espresso aparate.",
+            "heading_1": "Za Nespresso aparate",
+            "heading_2": "Pržena mljevena kava u kapsuli",
+            "heading_3": "100% Arabica sorte iz Etiopije, Kolumbije, Gvatemale i Brazila",
+            "heading_4": "Elegantan, harmoničan okus",
+            "price": 32.00,
+            "cover": "images/pellini_nespresso_decaffeinato.jpg"
+        }
+    },
+    {
+        "model": "products.capsulecoffee",
+        "pk": 22,
+        "fields": {
+            "title": "PELLINI BIOLOGICA 10KOM",
+            "short_description": "Pellini BIOLOGICA kapsule za nespresso.",
+            "long_description": "Kava za kućanske espresso aparate.",
+            "heading_1": "Za Nespresso aparate",
+            "heading_2": "Kava iz organskog uzgoja",
+            "heading_3": "Pržena mljevena kava u kapsuli",
+            "heading_4": "100% Arabica sorta iz Etiopije, Kolumbije, Gvatemale i Brazila",
+            "heading_5": "Tamna čokolada, karamela, toast, lješnjaci",
+            "heading_6": "Nizak postotak kofeina, 1.3%",
+            "heading_7": "Savršen espresso i bez dodatka šećera",
+            "price": 32.00,
+            "cover": "images/pellini_nespresso_biologica.jpg"
+        }
+    },
+    {
+        "model": "products.capsulecoffee",
+        "pk": 23,
+        "fields": {
+            "title": "PELLINI SUPREMO 10KOM",
+            "short_description": "Pellini SUPREMO kava za nespresso.",
+            "long_description": "Kava za kućanske espresso aparate",
+            "heading_1": "Za Nespresso aparate",
+            "heading_2": "Pržena mljevena kava u kapsuli",
+            "heading_3": "100% Arabica sorte iz Etiopije, Kolumbije, Gvatemale i Brazila",
+            "heading_4": "Marelica, breskva, toast, lješnjaci",
+            "heading_5": "Punije tijelo",
+            "price": 32.00,
+            "cover": "images/pellini_nespresso_supremo.jpg"
+        }
+    },
+    {
+        "model": "products.capsulecoffee",
+        "pk": 24,
+        "fields": {
+            "title": "PELLINI ABSOLUTE 10KOM",
+            "short_description": "Pellini ABSOLUTE kava za nespresso.",
+            "long_description": "Kava za kućanske espresso aparate",
+            "heading_1": "Za Nespresso aparate",
+            "heading_2": "Pržena mljevena kava u kapsuli",
+            "heading_3": "100% Arabica sorte iz Etiopije, Kolumbije, Gvatemale i Brazila",
+            "heading_4": "Prženi lješnjaci i tamna čokolada",
+            "heading_5": "Punije tijelo",
+            "price": 32.00,
+            "cover": "images/pellini_nespresso_absolute.jpg"
+        }
+    },
+    {
+        "model": "products.capsulecoffee",
+        "pk": 25,
+        "fields": {
+            "title": "PELLINI MAGNIFICO 10KOM",
+            "short_description": "Pellini MAGNIFICO kava za nespresso.",
+            "long_description": "Kava za kućanske espresso aparate",
+            "heading_1": "Za Nespresso aparate",
+            "heading_2": "Pržena mljevena kava u kapsuli",
+            "heading_3": "100% Arabica sorte iz Etiopije, Kolumbije, Gvatemale i Brazila",
+            "heading_4": "Čokolada, karamela, toast, lješnjaci",
+            "heading_5": "Punije tijelo",
+            "price": 32.00,
+            "cover": "images/pellini_nespresso_magnifico.jpg"
+        }
+    },
+    {
+        "model":"products.capsulecoffee",
+        "pk": 26,
+        "fields": {
+            "title": "PELLINI ARMONIOSO 10KOM",
+            "short_description": "Pellini ARMONIOSO kava za nespresso.",
+            "long_description": "Kava za kućanske espresso aparate.",
+            "heading_1": "Za Nespresso aparate",
+            "heading_2": "Pržena mljevena kava u kapsuli",
+            "heading_3": "100% Arabica sorte iz Etiopije, Kolumbije, Gvatemale i Brazila",
+            "heading_4": "Idealna za mješanje s mlijekom",
+            "heading_5": "Gorka čokolada, karamela, lješnjaci, toast, liker",
+            "heading_6": "Puno tijelo, postojana krema",
+            "price": 32.00,
+            "cover": "images/pellini_nespresso_armonioso.jpg"
+        }
+    }
+]

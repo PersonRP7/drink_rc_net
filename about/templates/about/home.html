@@ -1,0 +1,161 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <!--Grid row-->
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-7 mb-4">
+
+            <!--Put img tag under HTML5 picture tag-->
+          <div class="view overlay z-depth-1-half">
+
+              <picture>
+
+            <source srcset="{% static 'about/coffee_generic.webp' %}" type="image/webp">
+
+            <img src="{% static 'about/coffee_generic.jpg' %}" class="card-img-top" alt="promet aroma">
+
+              </picture>
+
+            <div class="mask rgba-white-light"></div>
+          </div>
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-5 mb-4">
+
+          <h2 class="red-text">Promet Aroma Webshop</h2>
+          <hr>
+          <p>Promet Aroma nudi široki asortiman izvrsne Pellini kave,
+              Gaggia aparata za kavu te vodene dispenzere i Snack aparate.
+              Također vršimo servis aparata za kavu i prodaju rezervnih dijelova.
+          </p>
+          <a href="{% url 'products:products_all' %}" class="btn btn-outline-red">Enter!</a>
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+
+      <!--Grid row-->
+      <div class="row">
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-12 mb-4">
+
+          <!--Card-->
+          <div class="card">
+
+            <!--Card image-->
+            <div class="view overlay">
+
+            <picture>
+
+            <source srcset="{% static 'about/pellini_oro_classic.webp' %}" type="image/webp">
+
+              <img src="{% static 'about/pellini_oro_classic.jpg' %}" class="card-img-top" alt="pellini oro classic">
+
+            </picture>
+              <a href="#">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+
+            <!--Card content-->
+            <div class="card-body">
+              <!--Title-->
+              <h4 class="card-title red-text">Kava</h4>
+              <!--Text-->
+              <p class="card-text">Široki asortiman izvrsnih Pellini proizvoda. Mljevena,
+                  u zrnu i Nespresso kava.
+              </p>
+              <a href="{% url 'products:coffee_overview' %}" class="btn btn-outline-red">Enter!</a>
+            </div>
+
+          </div>
+          <!--/.Card-->
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4">
+
+          <!--Card-->
+          <div class="card">
+
+            <!--Card image-->
+            <div class="view overlay">
+
+            <picture>
+
+              <source srcset="{% static 'about/gaggia1.webp' %}" type="image/webp">
+
+              <img src="{% static 'about/gaggia1.png' %}" class="card-img-top" alt="promet aroma gaggia aparati">
+
+            </picture>
+              <a href="#">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+
+            <!--Card content-->
+            <div class="card-body">
+              <!--Title-->
+              <h4 class="card-title red-text">Aparati</h4>
+              <!--Text-->
+              <p class="card-text">Automati na kovanice, aparati na kapsule, snack strojevi, vodeni
+                  dispenzeri i aparati za kavu.
+              </p>
+              <a href="{% url 'products:machine_overview' %}" class="btn btn-outline-red">Enter!</a>
+            </div>
+
+          </div>
+          <!--/.Card-->
+
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4">
+
+          <!--Card-->
+          <div class="card">
+
+            <!--Card image-->
+            <div class="view overlay">
+            <picture>
+              <source srcset="{% static 'about/vending_machine.webp' %}" type="image/webp">
+              <img src="{% static 'about/vending_machine.jpg' %}" class="card-img-top" alt="promet aroma servis svih tipova aparata za kavu">
+            </picture>
+              <a href="#">
+                <div class="mask rgba-white-slight"></div>
+              </a>
+            </div>
+
+            <!--Card content-->
+            <div class="card-body">
+              <!--Title-->
+              <h4 class="card-title red-text">Servis</h4>
+              <!--Text-->
+              <p class="card-text">Servis svih tipova aparata za kavu, kućanskih i profesionalnih.
+                  Prodaja rezervnih dijelova.
+              </p>
+              <a href="{% url 'about:service' %}" class="btn btn-outline-red">Enter!</a>
+            </div>
+
+          </div>
+          <!--/.Card-->
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+
+{% endblock content %}

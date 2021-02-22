@@ -72,19 +72,20 @@ Uz to nudimo već mljevenu kavu Pellini kao i pribor za kuhanje mlijeka ( <a hre
                                 </div>
                             {% endif %}
 
+                            <!--Snipcart button-->
+                              <!--<button class="snipcart-add-item btn btn-light btn-sm mr-1 mb-2"-->
+                              <!--data-item-id="{{ o.id }}"-->
+                              <!--data-item-price="{{ o.price }}"-->
+                              <!--data-item-url="https://{{ request.get_host }}{{ o.get_absolute_url }}"-->
+                              <!--data-item-description="{{ o.short_description }}"-->
+                              <!--data-item-name="{{ o.title }}"-->
+                              <!-->-->
+                              <!--<i class="fas fa-shopping-cart pr-2"></i>Add to cart-->
+                              <!--</button>-->
+                              <!--/Snipcart button-->
 
-                              <button class="snipcart-add-item btn btn-light btn-sm mr-1 mb-2"
-                              data-item-id="{{ o.id }}"
-                              data-item-price="{{ o.price }}"
-                              data-item-url="https://{{ request.get_host }}{{ o.get_absolute_url }}"
-                              data-item-description="{{ o.short_description }}"
-                              data-item-name="{{ o.title }}"
-                              >
-                              <i class="fas fa-shopping-cart pr-2"></i>Add to cart
-                              </button>
 
-
-                              <span><p>Price: {{ o.price }} kn</span>
+                              <span><p>Cijena: {{ o.price }} kn</span>
 
                         </div>
 

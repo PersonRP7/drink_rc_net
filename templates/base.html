@@ -7,9 +7,9 @@
     <meta name="keywords" content="promet aroma,prometaroma,Aroma aparati za kavu,Pellini caffe kava,Pellini top,Pellini oro,Pellini verde,Pellini kapsule,Pellini break,espresso 100% arabica,kava za ugostiteljstvo,domaćinstvo, mocca, Espresso,Kava,cafe,espreso,Vending,horeca,Ho.re.ca,Samoposlužni automati za kavu,Samouslužni automati tople napitke,snack,Espresso automati,aparati za kavu,aparat za kavu,topli napitci,hladni napitci,postava aparata za kavu,cma,astoria aparat za kavu,daj kavu,hoću kavu,najbolja kava u gradu,najbolja kava u zagrebu,vrhunski espresso,vrhunska kava za ugostiteljstvo,talijanska kava,dostava kave,servis aparat za kavu,prodaja aparata za kavu,30 sekundi,ugostiteljska oprema,aparati za vodu,uredski aparati za kavu,aparati,servis žetonjera,Mario čulina,Zlatko čulina,Druga zagorska 3 trešnjevka,II. zagorska 3,Bianchi,Necta,Rheavendors,Ep-2100,Esmart,dijelovi za aparate za kavu,lavazza,franck,spaz,automatic servis,drinkomatic,valentivi,moćan,virus,aristos,duga cen,dalmayer,francis,coffe to go,kava za van,nescafe,illy,procafe,bonfanti,julius meinl,apt,nik orosi,eliscaffe,teneo,matija hrkač,domagoj trusić,romeo lambaša,mlinac,kava u zrnu,lokal,servis opreme,Gaggia,Chimbali,Faema,Saeco,Krups,Nespresso,Delonghi,Simens,AEG,Sanremo,La Scala,San Marco,La Pavoni,Lavazza,Illy Francis & Francis X1 X7,Franck,Jura,Zespresso,Dolce Gusto,Necta,FAS,Omnimatic,Zannussi,Rhea vendors,Bianchi,Sanitacija aparata za vodu,Popravak ugostiteljske opreme,Popravak ugostiteljskih perilica za sudje suđe, kava iz organskog uzgoja,zdrava kava,organska kava,DBK, digitalno brojilo kave,Biofarm čajevi,BIO,povoljan servis,trešnjevka, njuškalo trgovina,sveti rok,sanitacija" />
     <meta name="description" content="PROMET AROMA d.o.o. Horeca & Vending - poduzeće je za uvoz, zastupanje, trgovinu i usluge servisa osnovano 1996. u Zagrebu. Brandovi: Pellini caffe, Biofarm čajevi, Sanremo machines. Osnovna djelatnost poduzeća je distribucija kave. Zbog fokusa na kvalitetu usluge uvijek smo imali svoje mjesto na tržištu. Jedni smo od prvih distributera aparata za kavu u plastičnim kapsulama u Hrvatskoj.  Danas u ponudi imamo prodaju, najam i servis samouslužnih automata i aparata za tople i hladne napitke. Prodaju, najam i servis profesionalne ugostiteljske opreme kao i ukupnog popratnog sadržaja vezanih za konzumaciju kave i toplih napitaka. Od 2010. godine zastupnici smo talijanskog brenda Pellini caffe i talijanskog proizvođača aparata za kavu Sanremo machines. Ljubav prema dobroj šalici kave naš je osnovni motiv za buduće poslovne i životne izazove. Pridružite nam se na tom putu!" />
     {% if title %}
-        <title>Store {{ title }}</title>
+        <title>{{ title }}</title>
     {% else %}
-        <title>Store</title>
+        <title>Promet Aroma</title>
     {% endif %}
 
     <!-- Font Awesome -->
@@ -25,12 +25,12 @@
     <!-- /Material Design Bootstrap -->
 
      <!--Snipcart preconnect-->
-    <link rel="preconnect" href="https://app.snipcart.com">
-    <link rel="preconnect" href="https://cdn.snipcart.com">
+    <!--<link rel="preconnect" href="https://app.snipcart.com">-->
+    <!--<link rel="preconnect" href="https://cdn.snipcart.com">-->
      <!--/Snipcart preconnect-->
 
      <!--Snipcart default CSS-->
-    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.23/default/snipcart.css" />
+    <!--<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.23/default/snipcart.css" />-->
      <!--/Snipcart default CSS-->
 
 
@@ -48,7 +48,8 @@
       <div class="container">
 
         <!-- Navbar brand -->
-        <a class="navbar-brand red-text" href="#">Promet Aroma</a>
+        <!--<a class="navbar-brand red-text" href="#">Promet Aroma</a>-->
+        <a class="navbar-brand red-text" href="{% url 'about:home' %}">Promet Aroma</a>
 
         <!-- Collapse button -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
@@ -62,7 +63,7 @@
           <!-- Links -->
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link red-text" href="{% url 'about:home' %}">Home
+              <a class="nav-link red-text" href="{% url 'about:home' %}">Početna
                 <span class="sr-only">(current)</span>
               </a>
             </li>
@@ -70,18 +71,18 @@
               <a class="nav-link red-text" href="{% url 'products:products_all' %}">Shop</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link red-text" href="{% url 'about:service' %}">Servis</a>
+              <a class="nav-link red-text" href="{% url 'about:service' %}">O Nama</a>
             </li>
           </ul>
 
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a href="{% url 'products:search' %}" class="nav-link red-text">Search</a>
+              <a href="{% url 'products:search' %}" class="nav-link red-text">Pretraga</a>
             </li>
 
-            <li class="nav-item">
-              <a href="{% url 'admin:index' %}" class="nav-link red-text">Login</a>
-            </li>
+            <!--<li class="nav-item">-->
+            <!--  <a href="{% url 'admin:index' %}" class="nav-link red-text">Login</a>-->
+            <!--</li>-->
           </ul>
           <!-- Links -->
 

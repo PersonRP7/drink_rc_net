@@ -31,7 +31,9 @@ DEBUG = False
 
 # Previous version
 # ALLOWED_HOSTS = ["kavashop.pythonanywhere.com"]
-ALLOWED_HOSTS = ["www.prometaroma.net"]
+# ALLOWED_HOSTS = ["www.prometaroma.net"]
+ALLOWED_HOSTS = ["www.prometaroma.hr"]
+
 
 
 # Application definition

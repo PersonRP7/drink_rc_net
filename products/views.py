@@ -7,6 +7,10 @@ from django.urls import reverse
 
 from django.conf import settings
 
+# New addition
+from products.helpers.functions import get_product_title
+#/New addition
+
 
 # Outside of products:
 # VendingMachines, CapsuleMachine, SnackMachine, WaterDispenser
@@ -35,6 +39,9 @@ def product_specific(request, slug):
         'products/product_specific.html',
         {
             "object": instance_from_list(filtered_entities),
+            #New addition
+            "title": [x.title for x in get_product_title(slug)][0],
+            #/New addition
             "DATA_API_KEY":settings.DATA_API_KEY
         }
     )

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transaction>
+    <amount>325040</amount>
+    <currency>HRK</currency>
+    <digest>edfce3312e4bbb51d63d84a731c40185bd1a672401cb4c259c8b5aaa523d8d738079c6c9b3089a390c2f09d054b1ba1885a23282fbf153901d7f6ff85f33d68a</digest>
+    <authenticity-token>be173a127054ef14626b9f8328e7633a56424c78</authenticity-token>
+    <order-number>89871613782877</order-number>
+</transaction>

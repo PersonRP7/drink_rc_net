@@ -13,7 +13,7 @@
     {% endif %}
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">-->
     <!-- /Font Awesome -->
 
     <!-- Bootstrap core CSS-->
@@ -137,125 +137,88 @@
 <!-- /Main container -->
 
   <!-- Footer -->
- <footer
- class="text-center text-lg-start text-dark"
- style="background-color: #ECEFF1"
- >
-<!-- Section: Social media -->
-<section
-    class="d-flex justify-content-between p-4 text-white"
-    style="background-color: red"
-    >
-<!-- Left -->
-<div class="me-5">
-<span>Pratite nas preko društvenih mreža:</span>
-</div>
-<!-- Left -->
+  <footer class="page-footer font-small red-ic pt-4 mt-4">
 
-<!-- Right -->
-<div>
-<a href="https://www.facebook.com/Pellini-kava-aparati-servis-133328306757446/" class="text-white me-4">
- <i class="mx-2 fab fa-facebook-f"></i>
-</a>
-<a href="https://www.instagram.com/prometaroma/?hl=en" class="text-white me-4">
- <i class="mx-2 fab fa-instagram"></i>
-</a>
-<a href="https://www.youtube.com/channel/UC-bLxB1TERmDOHSj8HYgfSA" class="text-white me-4">
- <i class="mx-2 fab fa-youtube"></i>
-</a>
-</div>
-<!-- Right -->
-</section>
-<!-- Section: Social media -->
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
 
-<!-- Section: Links  -->
-<section class="">
-<div class="container text-center text-md-start mt-5">
-<!-- Grid row -->
-<div class="row mt-3">
- <!-- Grid column -->
- <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-   <!-- Content -->
-   <h6 class="text-uppercase font-weight-bold">Promet Aroma</h6>
-   <hr
-       class="mb-4 mt-0 d-inline-block mx-auto"
-       style="width: 60px; background-color: red; height: 2px"
-       />
-   <p>
-     <!-- Vrhunska Pellini kava. Najbolji Gaggia aparati. -->
-     <p class="text-left">OIB/VAT: 66564862998</p>
-     <p class="text-left">IBAN: HR6223600001101491290</p>
-   </p>
- </div>
- <!-- Grid column -->
+      <!-- Grid row -->
+      <div class="row">
 
- <!-- Grid column -->
- <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-   <!-- Links -->
-   <h6 class="text-uppercase font-weight-bold">Proizvodi</h6>
-   <hr
-       class="mb-4 mt-0 d-inline-block mx-auto"
-       style="width: 60px; background-color: red; height: 2px"
-       />
-    <p class="text-center"><a class="text-dark" href="{% url 'products:coffee_overview' %}">Kava</a></p>
-    <p class="text-center"><a class="text-dark" href="{% url 'products:machine_overview' %}">Strojevi</a></p>
-    <p class="text-center"><a class="text-dark" href="{% url 'products:coffee_sort' 'capsule' %}">Kapsule</a></p>
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
 
+          <!-- Content -->
+          <h5 class="text-uppercase">Promet Aroma d.o.o.</h5>
+          <p>Druga Zagorska 3, Trešnjevka
+10000 Zagreb, Hrvatska (CRO)</p>
+<p>
+  OIB/VAT: 66564862998
+</p>
+<p>
+  IBAN: HR6223600001101491290
+</p>
 
- </div>
- <!-- Grid column -->
+<p>
+  e-mail:  info@prometaroma.hr
+</p>
 
- <!-- Grid column -->
- <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-   <!-- Links -->
-   <h6 class="text-uppercase font-weight-bold">Partneri</h6>
-   <hr
-       class="mb-4 mt-0 d-inline-block mx-auto"
-       style="width: 60px; background-color: red; height: 2px"
-       />
-   <p>
-     <a href="https://www.gaggia.com/" class="text-dark">Gaggia</a>
-   </p>
-   <p>
-     <a href="https://www.pellinicaffe.com/en/" class="text-dark">Pellini</a>
-   </p>
- </div>
- <!-- Grid column -->
+        </div>
+        <!-- Grid column -->
 
- <!-- Grid column -->
- <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-   <!-- Links -->
-   <h6 class="text-uppercase font-weight-bold">Kontakt</h6>
-   <hr
-       class="mb-4 mt-0 d-inline-block mx-auto"
-       style="width: 60px; background-color: red; height: 2px"
-       />
-   <div>
-    <p class="text-left"><i class="fas fa-home mr-3"></i>Druga Zagorska 3, 10000 Zagreb</p>
-    <p class="text-left"><i class="fas fa-envelope mr-3"></i>info@prometaroma.hr</p>
-    <p class="text-left"><i class="fas fa-phone mr-3"></i>01 3695 016</p>
-   </div>
- </div>
- <!-- Grid column -->
-</div>
-<!-- Grid row -->
-</div>
-</section>
-<!-- Section: Links  -->
+        <hr class="clearfix w-100 d-md-none pb-3">
 
-<!-- Copyright -->
-<div
-class="text-center p-3"
-style="background-color: rgba(0, 0, 0, 0.2)"
->
-© 2021 Copyright:
-<a class="text-dark" href="https://prometaroma.hr/"
->Promet Aroma</a
->
-</div>
-<!-- Copyright -->
-</footer>
-<!-- Footer -->
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+
+          <!-- Links -->
+          <h5 class="text-uppercase">Korisni linkovi</h5>
+
+          <ul class="list-unstyled">
+            <li>
+                <!--Added div inside a tags-->
+              <a style="display: inline-block; position: relative; z-index: 1; padding: 2em; margin: -2em;" class="red-text" href="https://www.pellinicaffe.com/en/">Pellini cafe</a>
+            </li>
+            <li>
+              <a style="display: inline-block; position: relative; z-index: 1; padding: 2em; margin: -2em;" class="red-text" href="https://www.gaggia.com/">Gaggia</a>
+            </li>
+            <!--Added ul closing tags below-->
+          </ul>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+
+          <!-- Links -->
+          <h5 class="text-uppercase">Društvene mreže</h5>
+
+          <ul class="list-unstyled">
+            <li>
+              <a style="display: inline-block; position: relative; z-index: 1; padding: 2em; margin: -2em;" class="red-text" href="https://www.facebook.com/Pellini-kava-aparati-servis-133328306757446/">Facebook</a>
+            </li>
+            <li>
+              <a style="display: inline-block; position: relative; z-index: 1; padding: 2em; margin: -2em;" class="red-text" href="https://www.njuskalo.hr/tvrtka/promet-aroma">Njuškalo</a>
+            </li>
+        <!--Added ul closing tags below-->
+          </ul>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 red-text">© 2020 Copyright:
+      <p>Promet Aroma</p>
+    </div>
+    <!-- Copyright -->
+
+  </footer>
+  <!-- Footer -->
 
    <!-- JQuery -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

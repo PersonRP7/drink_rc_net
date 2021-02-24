@@ -6,32 +6,48 @@
     <div class="row">
 
         <!--Grid column-->
-        <div class="col-md-12 mb-4 mx-auto">
+        <div class="col-md-7 mb-4">
 
-            <div class="z-depth-1-half">
+            <!--Put img tag under HTML5 picture tag-->
+          <div class="view overlay z-depth-1-half">
+                <!--22 changes-->
+            <!--  <picture>-->
 
-              <img src="{% static 'about/promet_aroma_banner2.jfif' %}" class="view overlay card-img-top" alt="promet aroma">
+            <!--<source srcset="{% static 'about/coffee_generic.webp' %}" type="image/webp">-->
+
+            <!--<img src="{% static 'about/coffee_generic.jpg' %}" class="card-img-top" alt="promet aroma">-->
+
+            <!--  </picture>-->
+              <!--/22 changes-->
+
+              <!--22 new image-->
+              <img src="{% static 'about/promet_aroma_banner2.jfif' %}" class="card-img-top" alt="promet aroma">
+              <!--/22 new image-->
 
             <div class="mask rgba-white-light"></div>
+          </div>
 
-            <hr class="mx-4">
+        </div>
+        <!--Grid column-->
 
-            <div class="mt-4 mx-4 mb-4">
-              Promet Aroma nudi široki asortiman izvrsne Pellini kave,
+        <!--Grid column-->
+        <div class="col-md-5 mb-4">
+
+          <!--<h2 class="red-text">Promet Aroma Webshop</h2>-->
+          <!-- Original version above -->
+          <h2 class="red-text">Promet Aroma</h2>
+          <hr>
+          <p>Promet Aroma nudi široki asortiman izvrsne Pellini kave,
               Gaggia aparata za kavu te vodene dispenzere i Snack aparate.
               Također vršimo servis aparata za kavu i prodaju rezervnih dijelova.
-            </div>
+          </p>
+          <a href="{% url 'products:products_all' %}" class="btn btn-outline-red">Više</a>
 
-           <!-- <p class="text-center">Text</p> -->
-           <div class="text-center mb-4">
-             <a class="btn btn-outline-red" href="{% url 'products:products_all' %}">Ulaz</a>
-           </div>
-           <hr>
         </div>
-
+        <!--Grid column-->
 
       </div>
-      <!--/Grid row-->
+      <!--Grid row-->
 
       <!--Grid row-->
       <div class="row">

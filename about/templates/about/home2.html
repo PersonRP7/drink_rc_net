@@ -1,0 +1,212 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div id="jumboCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#jumboCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#jumboCarousel" data-slide-to="1"></li>
+        <li data-target="#jumboCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://www.kimkev.com/demo/coffee/assets/img/1.jpeg" class="d-block w-100" alt="...">
+            <div class="absolute-div">
+                <div class="carousel-caption d-none d-md-block text-white bayanganteks">
+                    <!-- <h1 class="brand">Overthinking</h1>
+                    <h3>Coffee..</h3> -->
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://www.kimkev.com/demo/coffee/assets/img/2.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block text-white bayanganteks">
+                <!-- <h1 class="brand">Best Espresso</h1>
+                <h3>Get up! Get Coffee! Be Happy!</h3> -->
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://www.kimkev.com/demo/coffee/assets/img/3.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block text-white bayanganteks">
+                <!-- <h1 class="brand">Americano</h1>
+                <h3>Your cup of inspiration..</h3> -->
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#jumboCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#jumboCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+
+<!-- About -->
+
+<div class="container-fluid">
+    <div id="about"></div>
+    <div class="row">
+        <div class="col-lg-6 p-5 mx-auto">
+            <!-- <p class='text-gray'>overthinking coffee.</p> -->
+
+            <p class="h2 mb-2 roboto coffeeColor"><b>Dobrodošli!</b></p>
+
+            
+            <p class="h5 mb-5 roboto">Za milijune ljudi diljem svijeta, kava je početak dana. Ovdje u Promet Aromi mi Vam želimo dati najbolji početak.</p>
+
+
+            <!-- <p class="text-gray"> If you are looking for a store with wide selection of specialty coffees and many additional products coupled with coffee, we are here at your service! Aromacafe offers a rich variety of coffee beans from all over the world for all caffeine-addicts like us! Visit us to taste this wonderful healing beverage and find something special for you!</p> -->
+            <p class="roboto">Ako tražite dućan raznovrsne selekcije Pellini kave, Gaggia aparata za kavu te vrhunski servis, došli ste na pravo mjesto. Obratite nam se s povjerenjem.</p>
+
+            <p><a href="#" class="btn btn-warning coffeeColor"> Želim znati više</a></p>
+        </div>
+        <div class="col-lg-6 mt-5 mb-5 mx-auto">
+            <div class="row mt-5">
+                <div class="col-lg-4 col-4">
+                    <img src="https://www.kimkev.com/demo/coffee/assets/img/5.jpg" class="img-fluid mr-1">
+                </div>
+                <div class="col-lg-4 col-4">
+                    <img src="https://www.kimkev.com/demo/coffee/assets/img/6.jpg" class="img-fluid mr-1">
+                </div>
+                <div class="col-lg-4 col-4">
+                    <img src="https://www.kimkev.com/demo/coffee/assets/img/7.jpg" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<!-- Paralax -->
+
+<div class="parallax"></div>
+
+<!-- Product -->
+
+<div id="product">
+    <!-- <div class="container-fluid p-5" style="background-color: #D7CCC8;"> -->
+        <div class="container fluid p-5"></div>
+        <!-- <div class="container-fluid p-5 bg-brown.bg-lighten-3"></div> -->
+
+        <div class="row p-5">
+            <!-- <div class="col-lg-12 text-center text-white"> -->
+                <div class="col-lg-12 text-center">
+                
+                <h2 class="roboto coffeeColor"><b>Što nudimo</b></h2>
+                
+            </div>
+        </div>
+        <div class="card-deck">
+            <div class="card">
+                <!-- <img src="https://www.kimkev.com/demo/coffee/assets/img/8.jpg" class="card-img-top" alt="..."> -->
+                <img src="{% static 'about/coffee_beans.png' %}" class="card-img-top" alt="">
+                <div class="card-body text-center">
+                    <!-- <h5 class="card-title" style="color: 664A45;"><b>Kava</b></h5> -->
+                    <!-- <h5 class="card-title" style="color: #664A45;">Kava</h5> -->
+                    <h5 class="card-title coffeeColor">Kava</h5>
+                    <p class="card-text roboto">Široki asortiman izvrsnih Pellini proizvoda. Mljevena, u zrnu i Nespresso kava.</p>
+                    
+                </div>
+            </div>
+            <div class="card">
+                <!-- <img src="https://www.kimkev.com/demo/coffee/assets/img/9.jpg" class="card-img-top" alt="..."> -->
+                <!-- <img src="/images/gaggia1.png" class="card-img-top" alt=""> -->
+                <img src="{% static 'about/gaggia1.png' %}" class="card-img-top" alt="">
+                <div class="card-body text-center">
+                    <h5 class=" card-title coffeeColor">Aparati</h5>
+                    <p class="card-text roboto">Automati na kovanice, aparati na kapsule, snack strojevi, vodeni dispenzeri i aparati za kavu.</p>
+                    
+                </div>
+            </div>
+            <div class="card">
+                <!-- <img src="/images/service.jpg" class="card-img-top" alt="..."> -->
+                <img src="{% static 'about/service.jpg' %}" class="card-img-top" alt="">
+                <div class="card-body text-center">
+                    <h5 class=" card-title coffeeColor">Servis</h5>
+                    <p class="card-text roboto">Servis svih tipova aparata za kavu, kućanskih i profesionalnih. Prodaja rezervnih dijelova.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Menu -->
+
+
+
+
+<!-- Event -->
+
+
+<div class="container-fluid">
+    <div id="event"></div>
+    <!-- <section class="jumbotron text-center" style="background-color: #D6C1A9;"> -->
+        <section class="jumbotron text-center">
+        <div class="container mb-5">
+            <h1 class="roboto coffeeColor">Selekcija</h1>
+            <!-- <p class="lead text-muted">
+                Neki od naših najboljih proizvoda<hr>
+            </p> -->
+
+            <p class="lead coffeeColor">
+                Neki od naših najboljih proizvoda<hr>
+            </p>
+
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="https://www.kimkev.com/demo/coffee/assets/img/event1.jpeg" class="img-fluid">
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="https://www.kimkev.com/demo/coffee/assets/img/event2.jpeg" class="img-fluid">
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img src="https://www.kimkev.com/demo/coffee/assets/img/event3.jpeg" class="img-fluid">
+                    <div class="card-body">
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Buy</button>
+                            </div>
+                            <small class="text-muted">9 mins</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</div>
+{% endblock content %}

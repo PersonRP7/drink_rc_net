@@ -19,6 +19,12 @@ def home(request):
         'about/home.html'
     )
 
+def home2(request):
+    return render(
+        request,
+        'about/home2.html'
+    )
+
 def service(request):
     return render(
         request,

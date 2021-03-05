@@ -3,268 +3,185 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="promet aroma,prometaroma,Aroma aparati za kavu,Pellini caffe kava,Pellini top,Pellini oro,Pellini verde,Pellini kapsule,Pellini break,espresso 100% arabica,kava za ugostiteljstvo,domaćinstvo, mocca, Espresso,Kava,cafe,espreso,Vending,horeca,Ho.re.ca,Samoposlužni automati za kavu,Samouslužni automati tople napitke,snack,Espresso automati,aparati za kavu,aparat za kavu,topli napitci,hladni napitci,postava aparata za kavu,cma,astoria aparat za kavu,daj kavu,hoću kavu,najbolja kava u gradu,najbolja kava u zagrebu,vrhunski espresso,vrhunska kava za ugostiteljstvo,talijanska kava,dostava kave,servis aparat za kavu,prodaja aparata za kavu,30 sekundi,ugostiteljska oprema,aparati za vodu,uredski aparati za kavu,aparati,servis žetonjera,Mario čulina,Zlatko čulina,Druga zagorska 3 trešnjevka,II. zagorska 3,Bianchi,Necta,Rheavendors,Ep-2100,Esmart,dijelovi za aparate za kavu,lavazza,franck,spaz,automatic servis,drinkomatic,valentivi,moćan,virus,aristos,duga cen,dalmayer,francis,coffe to go,kava za van,nescafe,illy,procafe,bonfanti,julius meinl,apt,nik orosi,eliscaffe,teneo,matija hrkač,domagoj trusić,romeo lambaša,mlinac,kava u zrnu,lokal,servis opreme,Gaggia,Chimbali,Faema,Saeco,Krups,Nespresso,Delonghi,Simens,AEG,Sanremo,La Scala,San Marco,La Pavoni,Lavazza,Illy Francis & Francis X1 X7,Franck,Jura,Zespresso,Dolce Gusto,Necta,FAS,Omnimatic,Zannussi,Rhea vendors,Bianchi,Sanitacija aparata za vodu,Popravak ugostiteljske opreme,Popravak ugostiteljskih perilica za sudje suđe, kava iz organskog uzgoja,zdrava kava,organska kava,DBK, digitalno brojilo kave,Biofarm čajevi,BIO,povoljan servis,trešnjevka, njuškalo trgovina,sveti rok,sanitacija" />
-    <meta name="description" content="PROMET AROMA d.o.o. Horeca & Vending - poduzeće je za uvoz, zastupanje, trgovinu i usluge servisa osnovano 1996. u Zagrebu. Brandovi: Pellini caffe, Biofarm čajevi, Sanremo machines. Osnovna djelatnost poduzeća je distribucija kave. Zbog fokusa na kvalitetu usluge uvijek smo imali svoje mjesto na tržištu. Jedni smo od prvih distributera aparata za kavu u plastičnim kapsulama u Hrvatskoj.  Danas u ponudi imamo prodaju, najam i servis samouslužnih automata i aparata za tople i hladne napitke. Prodaju, najam i servis profesionalne ugostiteljske opreme kao i ukupnog popratnog sadržaja vezanih za konzumaciju kave i toplih napitaka. Od 2010. godine zastupnici smo talijanskog brenda Pellini caffe i talijanskog proizvođača aparata za kavu Sanremo machines. Ljubav prema dobroj šalici kave naš je osnovni motiv za buduće poslovne i životne izazove. Pridružite nam se na tom putu!" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+
+    <!-- Roboto -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <!-- /Roboto -->
+
+    <!-- Fredoka -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <!-- /Fredoka -->
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- /Bootstrap -->
+    <link rel="stylesheet" href="{% static 'about/main.css' %}">
+
     {% if title %}
-        <title>{{ title }}</title>
+    <title>{{ title }}</title>
     {% else %}
-        <title>Promet Aroma</title>
+    <title>Promet Aroma</title>
     {% endif %}
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <!-- /Font Awesome -->
-
-    <!-- Bootstrap core CSS-->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
-    <!-- /Bootstrap core CSS -->
-
-    <!-- Material Design Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-    <!-- /Material Design Bootstrap -->
-
-     <!--Snipcart preconnect-->
-    <!--<link rel="preconnect" href="https://app.snipcart.com">-->
-    <!--<link rel="preconnect" href="https://cdn.snipcart.com">-->
-     <!--/Snipcart preconnect-->
-
-     <!--Snipcart default CSS-->
-    <!--<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.23/default/snipcart.css" />-->
-     <!--/Snipcart default CSS-->
-
-
-
 </head>
-<body class="skin-light">
-    <!--Main Navigation-->
-  <header>
+<body id="myPage" data-spy="scroll" data-target=".navbar">
 
-    <!--Navbar-->
-    <!-- <nav class="navbar navbar-expand-lg navbar-dark indigo"> -->
-    <nav class="navbar navbar-default navbar-expand-lg navbar-light red-ic">
-
-      <!-- Additional container -->
-      <div class="container">
-
-        <!-- Navbar brand -->
-        <!--<a class="navbar-brand red-text" href="#">Promet Aroma</a>-->
-        <a class="navbar-brand red-text" href="{% url 'about:home' %}">Promet Aroma</a>
-
-        <!-- Collapse button -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
-          aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Collapsible content -->
-        <div class="collapse navbar-collapse" id="basicExampleNav">
-
-          <!-- Links -->
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link red-text" href="{% url 'about:home' %}">Početna
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link red-text" href="{% url 'products:products_all' %}">Shop</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link red-text" href="{% url 'about:service' %}">O Nama</a>
-            </li>
-          </ul>
-
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a href="{% url 'products:search' %}" class="nav-link red-text">Pretraga</a>
-            </li>
-
-            <!--<li class="nav-item">-->
-            <!--  <a href="{% url 'admin:index' %}" class="nav-link red-text">Login</a>-->
-            <!--</li>-->
-          </ul>
-          <!-- Links -->
-
-          {% comment %} <form class="form-inline">
-            <div class="md-form my-0">
-              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+<!-- Main navigation -->
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top text-gray" style="background-color: rgba(0,0,0,0.5);">
+            <a class="navbar-brand" href="#"><i class="fas fa-mug-hot fa-lg"></i> Promet Aroma</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#myPage">Početna <span class=" sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">O Nama</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#product">Proizvodi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Servis</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#event">Gdje smo</a>
+                    </li>
+    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#maps">Pravila korištenja / privatnost</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Kontakt</a>
+                    </li>
+    
+                </ul>
+    
             </div>
-          </form> {% endcomment %}
-        </div>
-        <!-- Collapsible content -->
-
-      </div>
-      <!-- Additional container -->
-
-    </nav>
-    <!--/.Navbar-->
-
-  </header>
-  <!--Main Navigation-->
+        </nav>
+        <!-- /Navbar -->
+    </header>
+<!-- /Main navigation -->
 
  <!-- Main container (Messages here) -->
-{% comment %} Changed container to container-fluid {% endcomment %}
-<main role="main" class="container-fluid">
-    <div class="row">
-      {% comment %} <div class="col-md-8"> {% endcomment %}
-      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 my-border" >
-        {% if messages %}
-          {% for message in messages %}
-            <div class="alert alert-{{ message.tags }} msg">
-              {{ message }}
+ <main role="main" class="container-fluid">
+     <!-- <main role="main" class="container"> -->
+     <div class="row">
+       {% comment %} <div class="col-md-8"> {% endcomment %}
+       <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 my-border" >
+         {% if messages %}
+           {% for message in messages %}
+             <div class="alert alert-{{ message.tags }} msg">
+               {{ message }}
+             </div>
+           {% endfor %}
+         {% endif %}
+         <!-- <div style="padding-top:60px;"> -->
+           {% block content %}
+           {% endblock content %}
+         <!-- </div> -->
+ 
+
+         {% block script %}
+         {% endblock script %}
+       </div>
+     </div>
+   </main>
+ <!-- /Main container -->
+
+ <!-- Footer -->
+ <footer>
+    <div class="container-fluid p-5 bg-dark text-white">
+        <div id="contact"></div>
+        <div class="row mt-5">
+            <div class="col-lg-3 pb-3 mb-3">
+                <i class="fas fa-mug-hot fa-lg"></i>                <br>
+                <h4 class="text-white mt-2">Overthinking Coffee</h4>
+
+                Overthinking Coffee is a place for your perfect time over a cup of fragrant coffee. We offer over 100 sorts of coffee, freshly ground and made for you. Here you can try delicious desserts highlighting coffee taste.
+
+                <br><br>
+
+                <i class="fab fa-facebook fa-lg mr-2"></i>
+                <i class="fab fa-instagram fa-lg mr-2"></i>
+                <i class="fab fa-youtube fa-lg "></i>
             </div>
-          {% endfor %}
-        {% endif %}
-        <div style="padding-top:60px;">
-          {% block content %}
-          {% endblock content %}
+            <div class="col-lg-3 pb-3">
+                <h4 class="text-white mb-3">OPENING HOURS</h4>
+                <ul>
+                    <li>MONDAY 9:00 – 22:00</li>
+                    <li>TUESDAY 9:00 – 22:00</li>
+                    <li>WEDNESDAY 9:00 – 22:00</li>
+                    <li>THURSDAY 9:00 – 22:00</li>
+                    <li>FRIDAY 9:00 – 22:00</li>
+                    <li>SATURDAY 9:00 – 22:00</li>
+                    <li>SUNDAY 9:00 – 22:00</li>
+                </ul>
+
+
+            </div>
+            <div class="col-lg-3 pb-3">
+                <h4 class="text-white mb-3">CONTACT INFO</h4>
+                <p>You can always contact with us via email or phone. Get in touch with contact and get a quote form.
+                </p>
+
+                <i class="fas fa-laptop-house"></i> Office: <br>
+                Jl. A Yani Surabaya
+
+                <br><br>
+
+                <i class="fas fa-phone-square-alt"></i> Phone: <br>
+                +62 31 77792929                <br><br>
+
+                <i class="fas fa-envelope-square"></i> E-mail: <br>
+                info@overthingkingcoffee.com
+                <br><br>
+
+            </div>
+            <div class="col-lg-3 pb-3">
+                <h4 class="text-white mb-3">OTHER PLACES</h4>
+
+                <i class="fas fa-map-marker-alt"></i> <br>
+                Surabaya Tengah: <br>
+                Jl. A Yani Surabaya
+
+                <br><br>
+
+                <i class="fas fa-map-marker-alt"></i> <br>
+                Surabaya Barat: <br>
+                Jl. HR Muhammad.
+
+
+
+
+
+            </div>
         </div>
 
-         <!--Snipcart javascript-->
-        <script async src="https://cdn.snipcart.com/themes/v3.0.23/default/snipcart.js"></script>
-         <!--/Snipcart javascript-->
+        <br><br><br>
 
-        <!-- Snipcart configuration key -->
-        <!-- Moved to all.html and product_specific.html -->
-        <!-- /Snipcart configuration key -->
 
-        {% block script %}
-        {% endblock script %}
-      </div>
+
+        <div class="text-center">
+            <a href="#myPage" title="To Top">
+                <i class="fas fa-arrow-alt-circle-up text-gray"></i>
+            </a>
+            <p class="text-gray">Copyrights &copy; JC 2020 - All Rights Not Reserve Yet.
+          <br>
+          more info: jhonichandra.web@gmail.com</p>
+        </div>
     </div>
-  </main>
-<!-- /Main container -->
-
-  <!-- Footer -->
- <footer
- class="text-center text-lg-start text-dark"
- style="background-color: #ECEFF1"
- >
-<!-- Section: Social media -->
-<section
-    class="d-flex justify-content-between p-4 text-white"
-    style="background-color: red"
-    >
-<!-- Left -->
-<div class="me-5">
-<span>Pratite nas preko društvenih mreža:</span>
-</div>
-<!-- Left -->
-
-<!-- Right -->
-<div>
-<a href="https://www.facebook.com/Pellini-kava-aparati-servis-133328306757446/" class="text-white me-4">
- <i class="mx-2 fab fa-facebook-f"></i>
-</a>
-<a href="https://www.instagram.com/prometaroma/?hl=en" class="text-white me-4">
- <i class="mx-2 fab fa-instagram"></i>
-</a>
-<a href="https://www.youtube.com/channel/UC-bLxB1TERmDOHSj8HYgfSA" class="text-white me-4">
- <i class="mx-2 fab fa-youtube"></i>
-</a>
-</div>
-<!-- Right -->
-</section>
-<!-- Section: Social media -->
-
-<!-- Section: Links  -->
-<section class="">
-<div class="container text-center text-md-start mt-5">
-<!-- Grid row -->
-<div class="row mt-3">
- <!-- Grid column -->
- <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-   <!-- Content -->
-   <h6 class="text-uppercase font-weight-bold">Promet Aroma</h6>
-   <hr
-       class="mb-4 mt-0 d-inline-block mx-auto"
-       style="width: 60px; background-color: red; height: 2px"
-       />
-   <p>
-     <!-- Vrhunska Pellini kava. Najbolji Gaggia aparati. -->
-     <p class="text-left">OIB/VAT: 66564862998</p>
-     <p class="text-left">IBAN: HR6223600001101491290</p>
-   </p>
- </div>
- <!-- Grid column -->
-
- <!-- Grid column -->
- <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-   <!-- Links -->
-   <h6 class="text-uppercase font-weight-bold">Proizvodi</h6>
-   <hr
-       class="mb-4 mt-0 d-inline-block mx-auto"
-       style="width: 60px; background-color: red; height: 2px"
-       />
-    <p class="text-center"><a class="text-dark" href="{% url 'products:coffee_overview' %}">Kava</a></p>
-    <p class="text-center"><a class="text-dark" href="{% url 'products:machine_overview' %}">Strojevi</a></p>
-    <p class="text-center"><a class="text-dark" href="{% url 'products:coffee_sort' 'capsule' %}">Kapsule</a></p>
-
-
- </div>
- <!-- Grid column -->
-
- <!-- Grid column -->
- <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-   <!-- Links -->
-   <h6 class="text-uppercase font-weight-bold">Partneri</h6>
-   <hr
-       class="mb-4 mt-0 d-inline-block mx-auto"
-       style="width: 60px; background-color: red; height: 2px"
-       />
-   <p>
-     <a href="https://www.gaggia.com/" class="text-dark">Gaggia</a>
-   </p>
-   <p>
-     <a href="https://www.pellinicaffe.com/en/" class="text-dark">Pellini</a>
-   </p>
- </div>
- <!-- Grid column -->
-
- <!-- Grid column -->
- <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-   <!-- Links -->
-   <h6 class="text-uppercase font-weight-bold">Kontakt</h6>
-   <hr
-       class="mb-4 mt-0 d-inline-block mx-auto"
-       style="width: 60px; background-color: red; height: 2px"
-       />
-   <div>
-    <p class="text-left"><i class="fas fa-home mr-3"></i>Druga Zagorska 3, 10000 Zagreb</p>
-    <p class="text-left"><i class="fas fa-envelope mr-3"></i>info@prometaroma.hr</p>
-    <p class="text-left"><i class="fas fa-phone mr-3"></i>01 3695 016</p>
-   </div>
- </div>
- <!-- Grid column -->
-</div>
-<!-- Grid row -->
-</div>
-</section>
-<!-- Section: Links  -->
-
-<!-- Copyright -->
-<div
-class="text-center p-3"
-style="background-color: rgba(0, 0, 0, 0.2)"
->
-© 2021 Copyright:
-<a class="text-dark" href="https://prometaroma.hr/"
->Promet Aroma</a
->
-</div>
-<!-- Copyright -->
 </footer>
-<!-- Footer -->
-
-   <!-- JQuery -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
-<!--Below deactivated after lighthouse-->
-<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>-->
+ <!-- /Footer -->
+    
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>

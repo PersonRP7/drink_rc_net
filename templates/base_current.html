@@ -4,10 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="promet aroma,prometaroma,Aroma aparati za kavu,Pellini caffe kava,Pellini top,Pellini oro,Pellini verde,Pellini kapsule,Pellini break,espresso 100% arabica,kava za ugostiteljstvo,domaćinstvo, mocca, Espresso,Kava,cafe,espreso,Vending,horeca,Ho.re.ca,Samoposlužni automati za kavu,Samouslužni automati tople napitke,snack,Espresso automati,aparati za kavu,aparat za kavu,topli napitci,hladni napitci,postava aparata za kavu,cma,astoria aparat za kavu,daj kavu,hoću kavu,najbolja kava u gradu,najbolja kava u zagrebu,vrhunski espresso,vrhunska kava za ugostiteljstvo,talijanska kava,dostava kave,servis aparat za kavu,prodaja aparata za kavu,30 sekundi,ugostiteljska oprema,aparati za vodu,uredski aparati za kavu,aparati,servis žetonjera,Mario čulina,Zlatko čulina,Druga zagorska 3 trešnjevka,II. zagorska 3,Bianchi,Necta,Rheavendors,Ep-2100,Esmart,dijelovi za aparate za kavu,lavazza,franck,spaz,automatic servis,drinkomatic,valentivi,moćan,virus,aristos,duga cen,dalmayer,francis,coffe to go,kava za van,nescafe,illy,procafe,bonfanti,julius meinl,apt,nik orosi,eliscaffe,teneo,matija hrkač,domagoj trusić,romeo lambaša,mlinac,kava u zrnu,lokal,servis opreme,Gaggia,Chimbali,Faema,Saeco,Krups,Nespresso,Delonghi,Simens,AEG,Sanremo,La Scala,San Marco,La Pavoni,Lavazza,Illy Francis & Francis X1 X7,Franck,Jura,Zespresso,Dolce Gusto,Necta,FAS,Omnimatic,Zannussi,Rhea vendors,Bianchi,Sanitacija aparata za vodu,Popravak ugostiteljske opreme,Popravak ugostiteljskih perilica za sudje suđe, kava iz organskog uzgoja,zdrava kava,organska kava,DBK, digitalno brojilo kave,Biofarm čajevi,BIO,povoljan servis,trešnjevka, njuškalo trgovina,sveti rok,sanitacija" />
+    <meta name="description" content="PROMET AROMA d.o.o. Horeca & Vending - poduzeće je za uvoz, zastupanje, trgovinu i usluge servisa osnovano 1996. u Zagrebu. Brandovi: Pellini caffe, Biofarm čajevi, Sanremo machines. Osnovna djelatnost poduzeća je distribucija kave. Zbog fokusa na kvalitetu usluge uvijek smo imali svoje mjesto na tržištu. Jedni smo od prvih distributera aparata za kavu u plastičnim kapsulama u Hrvatskoj.  Danas u ponudi imamo prodaju, najam i servis samouslužnih automata i aparata za tople i hladne napitke. Prodaju, najam i servis profesionalne ugostiteljske opreme kao i ukupnog popratnog sadržaja vezanih za konzumaciju kave i toplih napitaka. Od 2010. godine zastupnici smo talijanskog brenda Pellini caffe i talijanskog proizvođača aparata za kavu Sanremo machines. Ljubav prema dobroj šalici kave naš je osnovni motiv za buduće poslovne i životne izazove. Pridružite nam se na tom putu!" />
     {% if title %}
-        <title>Store {{ title }}</title>
+        <title>{{ title }}</title>
     {% else %}
-        <title>Store</title>
+        <title>Promet Aroma</title>
     {% endif %}
 
     <!-- Font Awesome -->
@@ -22,97 +24,86 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
     <!-- /Material Design Bootstrap -->
 
-    <!-- Snipcart preconnect -->
-    <link rel="preconnect" href="https://app.snipcart.com">
-    <link rel="preconnect" href="https://cdn.snipcart.com">
-    <!-- /Snipcart preconnect -->
+     <!--Snipcart preconnect-->
+    <!--<link rel="preconnect" href="https://app.snipcart.com">-->
+    <!--<link rel="preconnect" href="https://cdn.snipcart.com">-->
+     <!--/Snipcart preconnect-->
 
-    <!-- Snipcart default CSS -->
-    <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.23/default/snipcart.css" />
-    <!-- /Snipcart default CSS -->
+     <!--Snipcart default CSS-->
+    <!--<link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.0.23/default/snipcart.css" />-->
+     <!--/Snipcart default CSS-->
 
 
 
 </head>
-<body>
+<body class="skin-light">
+    <!--Main Navigation-->
+  <header>
 
-<!-- Main navigation -->
-<header>
+    <!--Navbar-->
+    <!-- <nav class="navbar navbar-expand-lg navbar-dark indigo"> -->
+    <nav class="navbar navbar-default navbar-expand-lg navbar-light red-ic">
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark primary-color">
+      <!-- Additional container -->
+      <div class="container">
 
-<!-- Navbar brand -->
-<a class="navbar-brand" href="#">Navbar</a>
-<!-- /Navbar brand -->
+        <!-- Navbar brand -->
+        <!--<a class="navbar-brand red-text" href="#">Promet Aroma</a>-->
+        <a class="navbar-brand red-text" href="{% url 'about:home' %}">Promet Aroma</a>
 
-<!-- Collapse button -->
-<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav" aria-controls="basicExampleNav"
-aria-expanded="false" aria-label="Toggle navigation">
-<span class="navbar-toggler-icon"></span>
-</button>
-<!-- /Collapse button -->
+        <!-- Collapse button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+          aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-<!-- Collapsible content -->
-<div class="collapse navbar-collapse" id="basicExampleNav">
+        <!-- Collapsible content -->
+        <div class="collapse navbar-collapse" id="basicExampleNav">
 
-<!-- Links -->
-{% if user.is_authenticated %}
-  <a class="nav-item nav-link" href="{% url 'users:profile' user.username %}">{{ user.username }}</a>
-  <a class="nav-item nav-link" href="{% url 'users:logout' %}">Log out</a>
-{% else %}
-  <a class="nav-item nav-link" href="{% url 'users:login' %}">Log In</a>
-  <a class="nav-item nav-link" href="{% url 'users:register' %}">Register</a>
-{% endif %}
+          <!-- Links -->
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link red-text" href="{% url 'about:home' %}">Početna
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link red-text" href="{% url 'products:products_all' %}">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link red-text" href="{% url 'about:service' %}">O Nama</a>
+            </li>
+          </ul>
 
-<!-- Content other than user flow -->
-  <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="{% url 'products:search' %}" class="nav-link red-text">Pretraga</a>
+            </li>
 
-    <li class="nav-item active">
-      <a href="#" class="nav-item nav-link">Home</a>
-    </li>
+            <!--<li class="nav-item">-->
+            <!--  <a href="{% url 'admin:index' %}" class="nav-link red-text">Login</a>-->
+            <!--</li>-->
+          </ul>
+          <!-- Links -->
 
-    <li class="nav-item active">
-      <a href="#" class="nav-item nav-link">Products</a>
-    </li>
+          {% comment %} <form class="form-inline">
+            <div class="md-form my-0">
+              <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+            </div>
+          </form> {% endcomment %}
+        </div>
+        <!-- Collapsible content -->
 
-    <li class="nav-item active">
-      <a href="{% url 'about:about' %}" class="nav-item nav-link">About</a>
-    </li>
-
-    <!-- Dropdown -->
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-      <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
       </div>
-    </li>
-    <!-- /Dropdown -->
+      <!-- Additional container -->
 
-  </ul>
-  
-<!-- /Content other than user flow -->
+    </nav>
+    <!--/.Navbar-->
 
-<!-- /Links -->
+  </header>
+  <!--Main Navigation-->
 
-<form class="form-inline">
-  <div class="md-form my-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-  </div>
-</form>
-
-</div>
-<!-- /Collapsible content -->
-
-</nav>
-<!-- /Navbar -->
-
-</header>
-<!-- /Main navigation -->
-    
-<!-- Main container (Messages here) -->
+ <!-- Main container (Messages here) -->
 {% comment %} Changed container to container-fluid {% endcomment %}
 <main role="main" class="container-fluid">
     <div class="row">
@@ -130,9 +121,9 @@ aria-expanded="false" aria-label="Toggle navigation">
           {% endblock content %}
         </div>
 
-        <!-- Snipcart javascript -->
+         <!--Snipcart javascript-->
         <script async src="https://cdn.snipcart.com/themes/v3.0.23/default/snipcart.js"></script>
-        <!-- /Snipcart javascript -->
+         <!--/Snipcart javascript-->
 
         <!-- Snipcart configuration key -->
         <!-- Moved to all.html and product_specific.html -->
@@ -145,11 +136,135 @@ aria-expanded="false" aria-label="Toggle navigation">
   </main>
 <!-- /Main container -->
 
-<!-- Footer -->
-<footer>
+  <!-- Footer -->
+ <footer
+ class="text-center text-lg-start text-dark"
+ style="background-color: #ECEFF1"
+ >
+<!-- Section: Social media -->
+<section
+    class="d-flex justify-content-between p-4 text-white"
+    style="background-color: red"
+    >
+<!-- Left -->
+<div class="me-5">
+<span>Pratite nas preko društvenih mreža:</span>
+</div>
+<!-- Left -->
 
+<!-- Right -->
+<div>
+<a href="https://www.facebook.com/Pellini-kava-aparati-servis-133328306757446/" class="text-white me-4">
+ <i class="mx-2 fab fa-facebook-f"></i>
+</a>
+<a href="https://www.instagram.com/prometaroma/?hl=en" class="text-white me-4">
+ <i class="mx-2 fab fa-instagram"></i>
+</a>
+<a href="https://www.youtube.com/channel/UC-bLxB1TERmDOHSj8HYgfSA" class="text-white me-4">
+ <i class="mx-2 fab fa-youtube"></i>
+</a>
+</div>
+<!-- Right -->
+</section>
+<!-- Section: Social media -->
+
+<!-- Section: Links  -->
+<section class="">
+<div class="container text-center text-md-start mt-5">
+<!-- Grid row -->
+<div class="row mt-3">
+ <!-- Grid column -->
+ <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+   <!-- Content -->
+   <h6 class="text-uppercase font-weight-bold">Promet Aroma</h6>
+   <hr
+       class="mb-4 mt-0 d-inline-block mx-auto"
+       style="width: 60px; background-color: red; height: 2px"
+       />
+   <p>
+     <!-- Vrhunska Pellini kava. Najbolji Gaggia aparati. -->
+     <p class="text-left">OIB/VAT: 66564862998</p>
+     <p class="text-left">IBAN: HR6223600001101491290</p>
+   </p>
+ </div>
+ <!-- Grid column -->
+
+ <!-- Grid column -->
+ <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+   <!-- Links -->
+   <h6 class="text-uppercase font-weight-bold">Proizvodi</h6>
+   <hr
+       class="mb-4 mt-0 d-inline-block mx-auto"
+       style="width: 60px; background-color: red; height: 2px"
+       />
+    <p class="text-center"><a class="text-dark" href="{% url 'products:coffee_overview' %}">Kava</a></p>
+    <p class="text-center"><a class="text-dark" href="{% url 'products:machine_overview' %}">Strojevi</a></p>
+    <p class="text-center"><a class="text-dark" href="{% url 'products:coffee_sort' 'capsule' %}">Kapsule</a></p>
+
+
+ </div>
+ <!-- Grid column -->
+
+ <!-- Grid column -->
+ <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+   <!-- Links -->
+   <h6 class="text-uppercase font-weight-bold">Partneri</h6>
+   <hr
+       class="mb-4 mt-0 d-inline-block mx-auto"
+       style="width: 60px; background-color: red; height: 2px"
+       />
+   <p>
+     <a href="https://www.gaggia.com/" class="text-dark">Gaggia</a>
+   </p>
+   <p>
+     <a href="https://www.pellinicaffe.com/en/" class="text-dark">Pellini</a>
+   </p>
+ </div>
+ <!-- Grid column -->
+
+ <!-- Grid column -->
+ <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+   <!-- Links -->
+   <h6 class="text-uppercase font-weight-bold">Kontakt</h6>
+   <hr
+       class="mb-4 mt-0 d-inline-block mx-auto"
+       style="width: 60px; background-color: red; height: 2px"
+       />
+   <div>
+    <p class="text-left"><i class="fas fa-home mr-3"></i>Druga Zagorska 3, 10000 Zagreb</p>
+    <p class="text-left"><i class="fas fa-envelope mr-3"></i>info@prometaroma.hr</p>
+    <p class="text-left"><i class="fas fa-phone mr-3"></i>01 3695 016</p>
+   </div>
+ </div>
+ <!-- Grid column -->
+</div>
+<!-- Grid row -->
+</div>
+</section>
+<!-- Section: Links  -->
+
+<!-- Copyright -->
+<div
+class="text-center p-3"
+style="background-color: rgba(0, 0, 0, 0.2)"
+>
+© 2021 Copyright:
+<a class="text-dark" href="https://prometaroma.hr/"
+>Promet Aroma</a
+>
+</div>
+<!-- Copyright -->
 </footer>
-<!-- /Footer -->
+<!-- Footer -->
 
+   <!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<!--Below deactivated after lighthouse-->
+<!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>-->
 </body>
 </html>

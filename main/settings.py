@@ -27,12 +27,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = data.SECRET_KEY
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 # Previous version
 # ALLOWED_HOSTS = ["kavashop.pythonanywhere.com"]
 # ALLOWED_HOSTS = ["www.prometaroma.net"]
-ALLOWED_HOSTS = ["www.prometaroma.hr"]
+# ALLOWED_HOSTS = ["www.prometaroma.hr"]
+ALLOWED_HOSTS = []
 
 
 
@@ -88,23 +89,23 @@ WSGI_APPLICATION = 'main.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-DATABASES = {
-'default': {
-    'ENGINE': 'django.db.backends.mysql',
-    'NAME': 'kavashop$db',
-    'USER': 'kavashop',
-    'PASSWORD': 'kvshp678xyz!',
-    'HOST': 'kavashop.mysql.pythonanywhere-services.com',
-}
-}
-
-
 # DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': str(BASE_DIR / 'db.sqlite3'),
-#     }
+# 'default': {
+#     'ENGINE': 'django.db.backends.mysql',
+#     'NAME': 'kavashop$db',
+#     'USER': 'kavashop',
+#     'PASSWORD': 'kvshp678xyz!',
+#     'HOST': 'kavashop.mysql.pythonanywhere-services.com',
 # }
+# }
+
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': str(BASE_DIR / 'db.sqlite3'),
+    }
+}
 
 
 # Password validation
@@ -144,7 +145,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = '/home/kavashop/drink_rc/static'
+# STATIC_ROOT = '/home/kavashop/drink_rc/static'
 
 # STATICFILES_DIRS = [
 #     BASE_DIR / "static"

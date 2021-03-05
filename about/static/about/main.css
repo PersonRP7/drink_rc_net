@@ -1,0 +1,106 @@
+html {
+    scroll-behavior: smooth;
+  }
+body {
+    font-family: 'PT Sans Narrow', sans-serif;
+    /* Added max-width */
+    max-width:100%;
+    /* Added max-width */
+}
+
+.text-gray {
+    color: gray;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("http://www.kimkev.com/demo/coffee/assets/img/4.jpeg");
+
+    /* Set a specific height */
+    min-height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bayanganteks {
+    text-shadow: 1px 1px #000000;
+}
+
+.brand {
+    font-family: 'Caveat', cursive;
+}
+
+#jumboCarousel {
+    min-height: 300px;
+    min-width: 100%;
+}
+
+#jumboCarousel img {
+    min-height: 300px;
+    min-width: 100%;
+}
+
+#jumboCarousel>.carousel-indicators>li {
+    border-radius: 0px;
+    min-width: 25px;
+    background-color: #9d9d9d;
+    border: 1px solid black;
+    margin-right: 10px;
+    ;
+    margin-left: 10px;
+    ;
+}
+
+#jumboCarousel>.carousel-indicators>.active {
+    background-color: orange;
+}
+
+#jumboCarousel .carousel-caption {
+    color: black;
+    right: 58%;
+    text-align: center;
+    max-width: 500px;
+    left: auto;
+    /*top: auto;*/
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+}
+
+.item {
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+/* .roboto {
+    font-family: 'Roboto', sans-serif;
+} */
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.fredoka {
+    font-family: 'Fredoka One', cursive;
+}
+
+.coffeeColor {
+    color: #664A45;
+}
+
+/* .header{
+    max-width:100%;
+  } */
+
+  .container-fluid {
+    /* background-color: #e2e5f4; */
+    /* height: 600px;  */
+    /* margin-bottom: 200px; */
+    /* padding: 0 means that the navbar won't be wider than the main container */
+    padding: 0;
+}
